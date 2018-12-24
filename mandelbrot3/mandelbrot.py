@@ -5,7 +5,7 @@ Description: Creates a mandlebrot set based on complex numbers
 '''
 
 from cs5png import PNGImage
-# start your Lab 9 functions here:
+
 def update(c,n):
     """ updates the sum of the complex values c"""
     z = 0
@@ -39,17 +39,14 @@ def mset():
     width = 300
     height = 200
     image = PNGImage(width, height)
-    # create a loop in order to draw some pixels
     for col in range(width):
         for row in range(height):
-            # here is where you will need
-            # to create the complex number, c!
+create the complex number, c!
             x = scale(col, width, -2.0, 1.0)
             y = scale(row, height, -1.0, 1.0)
             c = x + y*1j
             if inMSet( c, 25 ) == True:
                 image.plotPoint(col, row)
-    # we looped through every image pixel; we now write the file
     image.saveFile()
 mset()
     
