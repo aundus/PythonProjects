@@ -119,7 +119,7 @@ class Board(object):
         return False
     
     def hostGame(self):
-        """host a game until there is a winner, the only other escape is death"""
+        """host a game until there is a winner"""
         print('Welcome to Connect Four!')
         turn = 'X'
         while True:
