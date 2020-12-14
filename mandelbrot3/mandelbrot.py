@@ -41,7 +41,7 @@ def mset():
     image = PNGImage(width, height)
     for col in range(width):
         for row in range(height):
-create the complex number, c!
+            #create the complex number, c!
             x = scale(col, width, -2.0, 1.0)
             y = scale(row, height, -1.0, 1.0)
             c = x + y*1j
